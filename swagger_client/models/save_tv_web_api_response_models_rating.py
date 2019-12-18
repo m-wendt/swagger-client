@@ -44,11 +44,9 @@ class SaveTVWebApiResponseModelsRating(object):
         'count': 'Count'
     }
 
-    def __init__(self, average=None, count=None, average=None, count=None):  # noqa: E501
+    def __init__(self, average=None, count=None):  # noqa: E501
         """SaveTVWebApiResponseModelsRating - a model defined in Swagger"""  # noqa: E501
 
-        self._average = None
-        self._count = None
         self._average = None
         self._count = None
         self.discriminator = None
@@ -57,52 +55,6 @@ class SaveTVWebApiResponseModelsRating(object):
             self.average = average
         if count is not None:
             self.count = count
-        if average is not None:
-            self.average = average
-        if count is not None:
-            self.count = count
-
-    @property
-    def average(self):
-        """Gets the average of this SaveTVWebApiResponseModelsRating.  # noqa: E501
-
-
-        :return: The average of this SaveTVWebApiResponseModelsRating.  # noqa: E501
-        :rtype: float
-        """
-        return self._average
-
-    @average.setter
-    def average(self, average):
-        """Sets the average of this SaveTVWebApiResponseModelsRating.
-
-
-        :param average: The average of this SaveTVWebApiResponseModelsRating.  # noqa: E501
-        :type: float
-        """
-
-        self._average = average
-
-    @property
-    def count(self):
-        """Gets the count of this SaveTVWebApiResponseModelsRating.  # noqa: E501
-
-
-        :return: The count of this SaveTVWebApiResponseModelsRating.  # noqa: E501
-        :rtype: int
-        """
-        return self._count
-
-    @count.setter
-    def count(self, count):
-        """Sets the count of this SaveTVWebApiResponseModelsRating.
-
-
-        :param count: The count of this SaveTVWebApiResponseModelsRating.  # noqa: E501
-        :type: int
-        """
-
-        self._count = count
 
     @property
     def average(self):
