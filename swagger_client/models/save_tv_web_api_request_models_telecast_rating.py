@@ -40,38 +40,14 @@ class SaveTVWebApiRequestModelsTelecastRating(object):
         'rating': 'Rating'
     }
 
-    def __init__(self, rating=None, rating=None):  # noqa: E501
+    def __init__(self, rating=None):  # noqa: E501
         """SaveTVWebApiRequestModelsTelecastRating - a model defined in Swagger"""  # noqa: E501
 
-        self._rating = None
         self._rating = None
         self.discriminator = None
 
         if rating is not None:
             self.rating = rating
-        if rating is not None:
-            self.rating = rating
-
-    @property
-    def rating(self):
-        """Gets the rating of this SaveTVWebApiRequestModelsTelecastRating.  # noqa: E501
-
-
-        :return: The rating of this SaveTVWebApiRequestModelsTelecastRating.  # noqa: E501
-        :rtype: int
-        """
-        return self._rating
-
-    @rating.setter
-    def rating(self, rating):
-        """Sets the rating of this SaveTVWebApiRequestModelsTelecastRating.
-
-
-        :param rating: The rating of this SaveTVWebApiRequestModelsTelecastRating.  # noqa: E501
-        :type: int
-        """
-
-        self._rating = rating
 
     @property
     def rating(self):
